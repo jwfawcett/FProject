@@ -44,7 +44,7 @@ done
 # Phase3 Check for ssl certificates (experimental)
 # Want to eventually pass all 200 and 300 http codes to this phase
 
-echo | openssl s_client -connect $city.flocksafety.com.com:443 -servername $city.flocksafety.com 2>/dev/null | openssl x509 -noout -checkend 0
+echo | openssl s_client -connect ${city}.flocksafety.com.com:443 -servername ${city}.flocksafety.com 2>/dev/null | openssl x509 -noout -checkend 0
 
 
 echo " [*] Look to see if web portal is vulnerable to CVE-2025-59407 "
