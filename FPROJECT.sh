@@ -21,7 +21,7 @@ URLS=(
     "https://${city}.aerodome.com"
     "https://${city}-${state}.aerodome.com"
     "https://${Company}.flocksafety.com"
-    "https://${Company}.flocksafety.com"
+    "https://${Company}.flock.com"
     "https://${city}.flocksafety.com:8080"
     "https://${city}.flocksafety.com:8900"
 )
