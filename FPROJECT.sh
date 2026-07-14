@@ -10,7 +10,7 @@ read -r -p "Enter the company associated with Flock (exp: PD or college) " Compa
 
 # Define an array of website URLs
 URLS=(
-    "https://${city}.flocksfatey.com"
+    "https://${city}.flocksafety.com"
     "https://${city}.flock.com"
     "https://${city}-pd.flocksafety.com"
     "https://${city}.pd.flocksafety.com"
@@ -22,6 +22,8 @@ URLS=(
     "https://${city}-${state}.aerodome.com"
     "https://${Company}.flocksafety.com"
     "https://${Company}.flocksafety.com"
+    "https://${city}.flocksafety.com:8080"
+    "https://${city}.flocksafety.com:8900"
 )
 
 # Loop through each URL in the array
@@ -45,6 +47,7 @@ done
 # Want to eventually pass all 200 and 300 http codes to this phase
 
 echo | openssl s_client -connect ${city}.flocksafety.com.com:443 -servername ${city}.flocksafety.com 2>/dev/null | openssl x509 -noout -checkend 0
+echo | openssl s_client -connect ${city}.flock.com.com:443 -servername ${city}.flock.com 2>/dev/null | openssl x509 -noout -checkend 0
 
 
 echo " [*] Look to see if web portal is vulnerable to CVE-2025-59407 "
