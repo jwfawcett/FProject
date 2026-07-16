@@ -55,7 +55,6 @@ echo " [*] flockhibiki17 is possible password for secrets keystore"
 
 echo " [*] shodan search for flock admin portal Title "flock admin" port: 8900"
 echo " [*] check Censys for certificates as well" 
-echo " [*] Thanks to everyone who keeps doing research on this topic. Anyone who wants to assist specifically on this topic can reach out to me.
-
+echo " [*] Thanks to everyone who keeps doing research on this topic. Anyone who wants to assist specifically on this topic can reach out to me."
 echo " [*] If you find a network flock cameras are connected to flock has an OUI of: B4:1E:52 "
 
